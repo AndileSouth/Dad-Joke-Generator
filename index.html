@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <title>DadjokeBot</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="main-content">
+
+        <div class="liked-bar">
+            <div class="cursor">Your Likes</div>
+        </div>
+    
+        <div class="history">
+            <div>history</div>
+        </div>
+        <div class="heading ">
+            <h1>DAD JOKES</h1>
+    
+            <div class="img-container">
+            <img src="./img/laughing-429_256.gif" alt="">
+            </div>
+            
+        </div>
+        
+        <div class="joke-container">
+    
+        <div class="jokeBox">
+            <p id="joke" class="joke"></p>
+        </div>
+    
+        <div class="btns">
+           <button id="like-btn" class="like-btn cursor">Like</button>
+        <button id="btn" class="new-joke cursor" onclick="getJoke()">Generate Joke</button> 
+        </div>
+        
+        </div>
+        
+        <div class="creator">created by Andile Zondo. API provided by C653 Labs, Inc</div>
+    
+    </div>
+  
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

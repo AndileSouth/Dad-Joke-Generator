@@ -1,0 +1,180 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.main-content {
+    background-color: D6D6D6;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+
+.img-container {
+    overflow: hidden;
+    width: 152px;
+    height: 179px;
+    
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cursor:hover {
+    cursor: pointer;
+}
+
+
+.heading {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 739;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.joke-container {
+    margin-bottom: 250px;
+}
+
+.jokeBox {
+    border: solid black 2px;
+    width: 699px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    word-wrap: break-word;
+    border-radius: 10px;
+    padding-bottom: 5px;
+}
+
+.joke {
+    margin-top: 10px;
+}
+
+button {
+    background-color: #4285F4;
+    font-weight: bold;
+    font-size: medium;
+}
+.btns {
+    margin-top: 10px;
+    text-align: end;
+}
+
+.like-btn {
+    width: 62px;
+    height: 30px;
+}
+
+.new-joke {
+    width: 127px;
+    height: 30px;
+}
+
+/* Liked bar */
+.liked-bar {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 2;
+    border: 1px solid black;
+    background-color: #4285F4;
+    padding: 2px;
+    border-radius: 5px;
+    font-size: large;
+    display: none;
+}
+
+/* history */
+.history {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 5;
+    border: 1px solid black;
+    background-color: #4285F4;
+    padding: 2px;
+    border-radius: 5px;
+    font-size: large;
+}
+
+/* creator */
+
+.creator {
+    position: absolute;
+    bottom: 10px;
+}
+
+@media screen and (min-width: 300px) {
+    img,.img-container{
+        display: none;
+    }
+    .heading {
+        font-size: large;
+        font-weight: 739;
+        margin: 60px 0;
+    }
+    .joke-container {
+        width: 95vw;
+
+    }
+    .jokeBox {
+        width: 95vw;
+        min-height: 127px;
+    }
+    button {
+        font-size: small;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .joke-container {
+        width: 95vw;
+        height: 127px;
+        
+
+    }
+    .jokeBox {
+        width: 95vw;
+        min-height: 127px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .joke-container {
+        max-width: 700px;
+        text-align: center;
+    }
+    .jokeBox {
+        max-width: 700px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    body {
+        display: grid;
+        place-content: center;
+    }
+    .main-content {
+        width: 1400px;
+    }
+}
