@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0-beta2/css/all.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="manifest" href="/img/site.webmanifest">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -13,24 +22,25 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+
     <div class="main-content">
 
-        <div class="liked-bar">
-            <div class="cursor">Your Likes</div>
-        </div>
-    
-        <div class="history">
-            <div>history</div>
-        </div>
-        <div class="heading ">
+    <header>
+    <div class="heading">
             <h1>DAD JOKES</h1>
-    
-            <div class="img-container">
-            <img src="./img/laughing-429_256.gif" alt="">
-            </div>
-            
+    </div>
+    <div class="interfaces">
+        <div class="home-interface">
+            <div id="home-btn" class="interface-text cursor" onclick="SwitchToHome()">Home</div> 
         </div>
+        <div class="history-interface">
+            <div id="History-btn" class="interface-text cursor" onclick="SwitchToHistory();History()">History <i class="fa-solid fa-clock-rotate-left"></i></div>
+        </div>
+    </div>
+    </header>
         
+    <div id="home-interface" class="underHeader">
+
         <div class="joke-container">
     
         <div class="jokeBox">
@@ -38,15 +48,28 @@
         </div>
     
         <div class="btns">
-           <button id="like-btn" class="like-btn cursor">Like</button>
-        <button id="btn" class="new-joke cursor" onclick="getJoke()">Generate Joke</button> 
+ 
+        <button id="btn" class="generate-btn cursor" onclick="getJoke()">Generate Joke</button> 
         </div>
         
         </div>
         
-        <div class="creator">created by Andile Zondo. API provided by C653 Labs, Inc</div>
-    
+        <div class="creator">
+            created by Andile Zondo. API provided by C653 Labs, Inc
+        </div>
+
     </div>
+
+      <div id="history-interface" class="History">
+        <h2>Previous jokes</h2>
+
+        <div id="store-jokes" class="store-jokes">
+            
+        </div>
+    </div>
+    </div>
+
+    
   
 
     <script src="./js/main.js"></script>
